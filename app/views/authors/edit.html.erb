@@ -1,0 +1,8 @@
+<h1>Modifier l'auteur</h1>
+
+<%= form_for @author, url: {action: "update"} do |f| %>
+  Prénom <%=f.text_field :firstname %><br>
+  Nom <%=f.text_field :lastname %><br>
+  Email <%=f.text_field :email %><br>
+  <%= f.submit "Modifier" %>
+  <% end %>
